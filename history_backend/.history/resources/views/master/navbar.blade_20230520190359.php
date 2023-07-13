@@ -1,1 +1,0 @@
-img/about-1.jpg
