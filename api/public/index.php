@@ -1,5 +1,7 @@
 <?php
 
+echo gethostname();
+
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 

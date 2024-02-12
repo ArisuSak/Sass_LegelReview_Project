@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+@php
+	echo gethostname();
+@endphp
 <body>
   <head class="sidebar">
       @include ('master.header') 

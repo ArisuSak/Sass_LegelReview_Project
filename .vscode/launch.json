@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/macbookpro/Documents/CS 426/Mission-7/Sass_LegelReview_Project",
+      "program": "/Users/macbookpro/Documents/CS 426/Mission-7/Sass_LegelReview_Project/build/Debug/outDebug"
+    }
+  ]
+}

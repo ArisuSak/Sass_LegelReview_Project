@@ -1,0 +1,49 @@
+version: "3.8"
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: arisusak/frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      DB_HOST: 188.166.242.2
+      DB_PORT: 3306
+      DB_DATABASE: front_end_legal
+      DB_USERNAME: username
+      DB_PASSWORD: Password_123
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: arisusak/backend
+    ports:
+      - "81:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      DB_HOST: 188.166.242.2
+      DB_PORT: 3306
+      DB_DATABASE: front_end_legal
+      DB_USERNAME: username
+      DB_PASSWORD: Password_123
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    image: arisusak/api
+    ports:
+      - "82:80"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      DB_HOST: 188.166.242.2
+      DB_PORT: 3306
+      DB_DATABASE: front_end_legal
+      DB_USERNAME: username
+      DB_PASSWORD: Password_123
