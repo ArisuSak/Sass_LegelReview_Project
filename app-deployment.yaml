@@ -77,7 +77,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 81
+  - port: 80
   selector:
     app: backend
   sessionAffinity: ClientIP
@@ -89,7 +89,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 82
+  - port: 80
   selector:
     app: api
   sessionAffinity: ClientIP
